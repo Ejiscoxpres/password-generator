@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Random Password Generator In Javascript</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link rel="stylesheet" href="pass.css">
+</head>
+
+<body>
+
+  <!--nav bar session
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="containers">
+    <div class="text">
+      <div class="logo"> 
+        <img src="https://imgs.search.brave.com/2qSMgdBzQTE_LkuYR8DBrYVp65hcNehm4JHCcWJBNcQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by8z/ZC1pbnRlcm5ldC1z/ZWN1aXJ0eS1iYWRn/ZV8xMDQ4LTE4MTA2/LmpwZz9zaXplPTYy/NiZleHQ9anBn" height="150px" width="250px">
+      </div>
+  <h1>The need for password-generator.</h1>
+  <p>They allow you to create different passwords for different <br>websites so that if one gets compromised the others remain safe.</p>
+    <p>This can help prevent hackers from breaching one <br>system and getting access to all your accounts.</p> 
+    <p> Most importantly, password generators are <br>widely available across different computing platforms.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav() " onclick="onclick()">&#9776; open</span>
+
+</div>
+</div>-->
+<!--passwor generator session-->
+
+  <div class="container">
+    <div class="password-generator">
+      <h2>Advanced Password Generator</h2>
+      <div class="password">
+        <p id="passwordBox"></p><i class="far fa-clipboard" onclick="copyPassword()"></i>
+      </div>
+      <div>
+        <label for="length">Length</label>
+        <input type="number" id="length" min="10" max="25" value="11">
+      </div>
+      <div>
+        <label for="symbol">Include Symbol</label>
+        <input type="checkbox" id="symbol" checked>
+      </div>
+      <div>
+        <label for="upperCase">Include upperCase</label>
+        <input type="checkbox" id="upperCase" checked>
+      </div>
+      <div>
+        <label for="number">Include Number</label>
+        <input type="checkbox" id="number" checked>
+      </div>
+      <div>
+        <label for="lowerCase">Include lowerCase</label>
+        <input type="checkbox" id="lowerCase" checked>
+      </div>
+      
+      
+      <button onclick="createPassword()">Create Random Password</button>
+    </div>
+  </div>
+  <script src="pass.js"></script>
+</body>
+
+</html>
